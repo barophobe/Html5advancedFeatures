@@ -1,0 +1,251 @@
+#box:hover {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-animation: movableBox 5s;
+  -moz-animation: movableBox 5s;
+  -ms-animation: movableBox 5s;
+  -o-animation: movableBox 5s;
+  animation: movableBox 5s;
+  -webkit-animation-iteration-count: 3;
+  -moz-animation-iteration-count: 3;
+  -ms-animation-iteration-count: 3;
+  -o-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -ms-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+  width: 200px;
+  height: 100px;
+  border: 2px dotted;
+  border-color: grey;
+  background: red;
+  position: relative; }
+
+@keyframes movableBox {
+  0% {
+    background: silver;
+    left: 0px;
+    top: 0px; }
+  25% {
+    background: #414141;
+    left: 900px;
+    top: 0px; }
+  50% {
+    background: white;
+    left: 900px;
+    top: 200px; }
+  75% {
+    background: gray;
+    left: 0px;
+    top: 200px; }
+  100% {
+    background: silver;
+    left: 0px;
+    top: 0px; } }
+@-webkit-keyframes movableBox {
+  0% {
+    background: silver;
+    left: 0px;
+    top: 0px; }
+  25% {
+    background: #414141;
+    left: 900px;
+    top: 0px; }
+  50% {
+    background: white;
+    left: 900px;
+    top: 200px; }
+  75% {
+    background: gray;
+    left: 0px;
+    top: 300px; }
+  100% {
+    background: silver;
+    left: 0px;
+    top: 0px; } }
+#ani2 {
+  background: #000;
+  color: #fff; }
+
+#action {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: 50%;
+  position: absolute;
+  margin: -50px 0 0 -50px;
+  left: 45%;
+  background: black;
+  -webkit-animation: glowness 5s linear 0s 5 alternate;
+  -moz-animation: glowness 5s linear 0s 5 alternate;
+  -o-animation: glowness 5s linear 0s 5 alternate;
+  -ms-animation: glowness 5s linear 0s 5 alternate;
+  animation: glowness 5s linear 0s 5 alternate; }
+
+#action:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  animation-play-state: paused; }
+
+@keyframes glowness {
+  0% {
+    box-shadow: 0 0 80px white; }
+  25% {
+    box-shadow: 0 0 150px white; }
+  50% {
+    box-shadow: 0 0 70px white; }
+  75% {
+    box-shadow: 0 0 50px white; }
+  100% {
+    box-shadow: 0 0 100px white; } }
+@-moz-keyframes glowness {
+  0% {
+    box-shadow: 0 0 80px white; }
+  25% {
+    box-shadow: 0 0 150px white; }
+  50% {
+    box-shadow: 0 0 70px white; }
+  75% {
+    box-shadow: 0 0 50px white; }
+  100% {
+    box-shadow: 0 0 100px white; } }
+@-webkit-keyframes glowness {
+  0% {
+    box-shadow: 0 0 80px white; }
+  25% {
+    box-shadow: 0 0 150px white; }
+  50% {
+    box-shadow: 0 0 70px white; }
+  75% {
+    box-shadow: 0 0 50px white; }
+  100% {
+    box-shadow: 0 0 100px white; } }
+@-o-keyframes glowness {
+  0% {
+    box-shadow: 0 0 80px white; }
+  25% {
+    box-shadow: 0 0 150px white; }
+  50% {
+    box-shadow: 0 0 70px white; }
+  75% {
+    box-shadow: 0 0 50px white; }
+  100% {
+    box-shadow: 0 0 100px white; } }
+@-ms-keyframes glowness {
+  0% {
+    box-shadow: 0 0 80px white; }
+  25% {
+    box-shadow: 0 0 150px white; }
+  50% {
+    box-shadow: 0 0 70px white; }
+  75% {
+    box-shadow: 0 0 50px white; }
+  100% {
+    box-shadow: 0 0 100px white; } }
+.menuButton {
+  padding: 3px;
+  margin: 4px 2px 4px;
+  background-color: white;
+  border: 3px, black;
+  font: 15px verdana;
+  border-radius: 10px;
+  text-decoration: none;
+  line-height: 2px;
+  text-shadow: 2px 2px 8px;
+  -webkit-transition: 1s, easeInOutBounce;
+  -moz-transition: 1s, easeInOutBounce;
+  -ms-transition: 1s, easeInOutBounce;
+  -o-transition: 1s, easeInOutBounce;
+  transition: 1s, easeInOutBounce; }
+
+.menuButton:hover {
+  padding: 3px;
+  margin: 4px, 4px, 4px;
+  background-color: green;
+  border: 3px, black;
+  font: 15px verdana;
+  border-radius: 10px;
+  text-decoration: none;
+  line-height: 2px;
+  text-shadow: 2px 2px 8px;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transition: 1s, easeInOutBounce;
+  opacity: 0.25;
+  color: #000;
+  -webkit-transition: 1s, easeInOutBounce;
+  -webkit-opacity: 0.25; }
+
+.navbar {
+  background-color: grey;
+  padding: 10px;
+  margin: 5px;
+  text-align: center; }
+
+.resize, .resize1, .resize2, .resize3, .resize4 {
+  width: 100px;
+  height: 50px;
+  margin: 100px auto;
+  padding: 10px;
+  background-color: #3F69F2;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  transition: 1s, easeInOutBounce;
+  -webkit-transition: 1s, easeInOutBounce; }
+
+.resize1:hover {
+  border-radius: 50px;
+  transform: translate(300px, 0px) scale(4) rotatex(360deg);
+  -webkit-transform: translate(300px, 0px) scale(4) rotatex(360deg);
+  transition: 1s, easeInOutBounce;
+  opacity: 0.25;
+  color: #000;
+  -webkit-transition: 1s, easeInOutBounce;
+  -webkit-opacity: 0.25; }
+
+.resize2:hover {
+  transform: scale(4);
+  -webkit-transform: scale(4);
+  transition: 1s, easeInOutBounce;
+  -webkit-transition: 1s, easeInOutBounce; }
+
+.resize3:hover {
+  -webkit-transform: skew(10deg, 7deg);
+  -o-transform: skew(10deg, 7deg);
+  -ms-transform: skew(10deg, 7deg);
+  -moz-transform: skew(10deg, 7deg);
+  transform: skew(10deg, 7deg); }
+
+.resize4:hover {
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.container {
+  max-width: 30%;
+  margin: 20% auto; }
+
+.dropBox, #dropbox1, #dropbox2 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #000000; }
+
+/*# sourceMappingURL=animation.css.map */
