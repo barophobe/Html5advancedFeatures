@@ -3,12 +3,10 @@
     @each $prefix in $prefixes {
       #{'-' + $prefix + '-' + $property}: $value;
     }
-
     // Output standard non-prefixed declaration
     #{$property}: $value;
   }
 }
-
 @mixin trans($time, $type) {
   -webkit-transition: $time, $type;
      -moz-transition: $time, $type;
@@ -16,11 +14,8 @@
       -o-transition: $time, $type;
           transition: $time, $type;
 }
-
-
 $boxColor1:silver;
 $boxColor2:white;
-
  #box:hover {
 	@include prefix((
     border-radius:5px,
@@ -36,7 +31,6 @@ $boxColor2:white;
 	background:red;
 	position:relative;
 }
-
 @keyframes movableBox {
 	0% {background:$boxColor1; left:0px; top:0px;}
 	25% {background:darken($boxColor1, 50%); left:900px; top:0px;}
@@ -44,7 +38,6 @@ $boxColor2:white;
 	75% {background:darken($boxColor2,50%); left:0px; top:200px;}
 	100% {background:$boxColor1; left:0px; top:0px;}
 }
-
 @-webkit-keyframes movableBox {
 	0% {background:$boxColor1; left:0px; top:0px;}
 	25% {background:darken($boxColor1, 50%); left:900px; top:0px;}
@@ -52,12 +45,10 @@ $boxColor2:white;
 	75% {background:darken($boxColor2,50%); left:0px; top:300px;}
 	100% {background:$boxColor1; left:0px; top:0px;}
 }
-
 #ani2 {
 	background:#000;
 	color:#fff;
 }
-
 #action {
 	width:200px;
 	height: 200px;
@@ -70,12 +61,10 @@ $boxColor2:white;
 	@include prefix((
 		animation: glowness 5s linear 0s 5 alternate), webkit moz o ms)
 }
-
 #action:hover {
 	@include prefix((
 		animation-play-state: paused), webkit moz o ms)
 }
-
 @keyframes glowness {
 	0% {box-shadow: 0 0 80px $boxColor2;}
 	25% {box-shadow: 0 0 150px $boxColor2;}
@@ -83,7 +72,6 @@ $boxColor2:white;
 	75% {box-shadow: 0 0 50px $boxColor2;}
 	100% {box-shadow: 0 0 100px $boxColor2;}
 }
-
 @-moz-keyframes glowness {
 	0% {box-shadow: 0 0 80px $boxColor2;}
 	25% {box-shadow: 0 0 150px $boxColor2;}
@@ -112,10 +100,6 @@ $boxColor2:white;
 	75% {box-shadow: 0 0 50px $boxColor2;}
 	100% {box-shadow: 0 0 100px $boxColor2;}
 }
-
-
-
-
 .menuButton{
 padding: 3px;
 margin: 4px 2px 4px;
@@ -152,7 +136,9 @@ text-shadow:2px 2px 8px;
 	margin:5px;
 	text-align:center;
 }
-
+.ani {
+	@extend .navbar;
+}
 .resize {
       width:100px;
       height:50px;
@@ -178,7 +164,6 @@ text-shadow:2px 2px 8px;
       -webkit-transition:1s, easeInOutBounce;
       -webkit-opacity: 0.25;
     }
-
      .resize2 {
       @extend .resize;
     }
@@ -188,7 +173,6 @@ text-shadow:2px 2px 8px;
        transition:1s, easeInOutBounce;
       -webkit-transition:1s, easeInOutBounce;
      }
-
  .resize3{
       @extend .resize;
     }
@@ -202,14 +186,11 @@ text-shadow:2px 2px 8px;
       .resize4:hover {
      	@include prefix((transform:rotate(45deg)),webkit o ms moz)
      }
-
-.container{
+.centre{
 	max-width: 30%;
 	margin:20% auto;
 }
-
 .dropBox{
-
 	float:left;
 	width:100px;
 	height:50px;

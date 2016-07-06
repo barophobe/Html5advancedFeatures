@@ -188,7 +188,7 @@
   -webkit-transition: 1s, easeInOutBounce;
   -webkit-opacity: 0.25; }
 
-.navbar {
+.navbar, .ani {
   background-color: grey;
   padding: 10px;
   margin: 5px;
@@ -236,7 +236,7 @@
   -moz-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.container {
+.centre {
   max-width: 30%;
   margin: 20% auto; }
 
