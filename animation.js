@@ -102,13 +102,14 @@ var x = 0;
 var y = 15;
 var z = 5;
 
- function animationDemo() {
- 	animatonMethod = window.mozRequestAnimationFrame ||
- 	window.msRequestAnimationFrame ||
+ function demoAnimation() {
+ 	animationMethod = window.mozRequestAnimationFrame ||
  	window.webkitRequestAnimationFrame ||
+ 	window.msRequestAnimationFrame ||
  	window.oRequestAnimationFrame;
 
- 	animationMethod(animationDemo);
+ 	animationMethod(demoAnimation);
+
  	x = (x + z);
  	if (x <= 0 || x >= 370 ) {
  		z = -z;
@@ -116,14 +117,14 @@ var z = 5;
  	draw();
 	}
  	function draw() {
- 	var canvas = document.getElementById('boxContainer7');
+ 	var canvas = document.getElementById("boxContainer7");
 	var context =canvas.getContext('2d');
 
 	context.clearRect(0, 0, 500, 170);
-	context.strokeStyle = "white";
+	context.strokeStyle = "black";
 	context.strokeRect(x, y,25,25);
  	}
- 	animationDemo();
+ 	demoAnimation();
 
 
 
